@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        // METODA CLASICA - OBJECT LITERALS
+        // 
+        const masina ={
+            nume: 'Dacia',
+            model: 'Logan',
+            motor: [1.1, 1.4],
+            an: {versiune:1990, versiunea2:2000},
+            culoare: 'Alb',
+            nrUsi: 4,
+            electric: false,
+            viteza: 180,
+            stop: function(){
+                console.log('Masina s-a oprit')
+            }
+        }
+        console.log(masina);
+        masina.nume='audi'
+        console.log(masina.nume);
+        console.log(masina.culoare);
+        console.log(masina.an.versiunea2);
+        console.log(masina.an['versiunea2']);
+        console.log(masina.motor[1]);
+        // console.log(masina.motor.1); NU orice array este un obiect, dar orice obiect poate fi array. Linia asta nu functioneaza.
+        masina.stop();
+    </script>
+</body>
+</html>
