@@ -9,10 +9,24 @@
 <body>
     <script src="./carte.js"></script>
     <script>
-        const carte = new Carte ('Poezii', 'M.Eminescu', 'All', 2010, 50, 120);
-carte.modificaPret(75);
-console.log(carte);
-carte.reducere(10);
+        let carte1 = new Carte ('Poezii', 'M.Eminescu', 'All', 2010, 120);
+        
+        console.log(carte1);
+    carte1.pret = 0;
+    console.log(carte1);
+
+    //     carte1.info();
+    //     carte1.pretNou();
+    //    console.log (carte1.pretNou);
+    //    carte1.modificaPret(5);
+    //    console.log(carte1);
+    //    carte1.pret = 0;
+    //    console.log(carte1);
+carte1.mypret = 0;
+console.log(carte1.mypret)
+// carte.modificaPret(75);
+// console.log(carte);
+// carte.reducere(10);
     </script>
 </body>
 </html>
