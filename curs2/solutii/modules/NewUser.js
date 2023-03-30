@@ -34,6 +34,7 @@ class NewUser{
     }
     doarme(ore){
         console.log(`Doarme ${ore} ore pe zi`);
+          // console.log(`parola mea este ${this.#password}`);
     }
 
 }
@@ -41,10 +42,11 @@ class NewUser{
 class Abonat extends NewUser{
     constructor(id, nume, email){
         super(id, nume, email);
-
+//super apeleaza constructorul parinte
     }
     info (){
         console.log(`Numele meu este ${this.nume} cu adresa de email ${this.email}`);
+        // console.log(`parola mea este ${this.password}`);
     }
    
 }
