@@ -8,7 +8,14 @@ abstract class Person2 {
     display(): void{
         console.log(this.name);
     }
-
+protected salut():string{
+    if(this.name == 'Ion'){
+        return this.name
+    }
+    else{
+  return 'vasile';
+}
+}
     abstract find(name:string): Person2;
 }
 
@@ -24,6 +31,8 @@ class Employee2 extends Person2 {
         return new Employee2(name, 1);
     }
 }
+
+// let persoana:Person2 =new Person2('Ion') Da eroare fiindca nu se poate instantia clasa abstracta
 
 let emp: Person2 = new Employee2("James", 100);
 emp.display(); //James
