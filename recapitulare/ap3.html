@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Scrieti o functie ce primeste un parametru de tip string si afiseaza doar un numar de cuvinte din acel sir
+        function truncate(str,nr){
+return str.split(' ').slice(0, nr).join(' ');
+
+        }
+        console.log(truncate("JavaScript este un limbaj de programare usor de invatat", 16))
+    </script>
+</body>
+</html>

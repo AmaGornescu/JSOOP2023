@@ -31,7 +31,7 @@ $(document).ready(function ($) {
             'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
         }
     });
-
+//cand se incarca pagina fa un request de tip get, serverul meu cu modulul coors stie sa-mi raspunda. Requestul de la frontend la backend se face aici
     $.ajax({
         url: "http://localhost:3002/users",
         method: "GET",
@@ -39,6 +39,7 @@ $(document).ready(function ($) {
         dataType: 'json',
         contentType: 'application/json'
 
+//daca primesc informatia folosesc un tool de la jquery dataTable cu ajutorul ei imi apare interfata. In id example pune informatia din data table, pune-i paginatie
     }).done(function (data) {
         //console.log(data);
         $('#example').dataTable({
@@ -55,7 +56,7 @@ $(document).ready(function ($) {
                 { "data": "telefon" },
                 {
                     "data": "datanastere",
-                    render: $.fn.dataTable.render.moment('YYYY-MM-DDTHH:mm:ss.SSSSZ','YYYY-MM-DD' )
+                    render: $.fn.dataTable.render.moment('YYYY-MM-DDTHH:mm:ss.SSSSZ','YYYY-MM-DD' ) //libraria moment ca sa-mi convertesc
     
                 },
                 {

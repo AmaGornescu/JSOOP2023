@@ -5,7 +5,7 @@ import {User} from "../types/User";
 const userRouter = express.Router();
 var jsonParser = bodyParser.json()
 userRouter.get("/", async (req: Request, res: Response) => {
-  userModel.findAll((err: Error, users: User[]) => {
+  userModel.findAll((err: Error, users: User[]) => {       //userModel este definit la linia 3. 
     if (err) {
       return res.status(500).json({"errorMessage": err.message});
     }
